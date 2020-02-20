@@ -1,0 +1,9 @@
+<div class="card">
+  <h5 class="card-header">Client List</h5>
+  <div class="card-body">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let client of (clients )">{{client | json}} <button class="btn btn-primary"
+          (click)="sendClick(client)">Send Message</button></li>
+    </ul>
+  </div>
+</div>
